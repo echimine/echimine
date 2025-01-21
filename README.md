@@ -22,3 +22,4 @@ Quand je ne code pas, vous pouvez me trouver :
 ---
 
 Collaborons pour créer quelque chose d’incroyable ! 🌟
+j'aime les pattes nrevùpnrzqpvrevjnvriec
