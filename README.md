@@ -20,6 +20,3 @@ Quand je ne code pas, vous pouvez me trouver :
 - **Email** : [eliott.chiminello@echimine.fr](mailto:eliott.chiminello@echimine.fr)  
 
 ---
-
-Collaborons pour créer quelque chose d’incroyable ! 🌟
-j'aime les pattes nrevùpnrzqpvrevjnvriec
