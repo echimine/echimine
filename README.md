@@ -16,7 +16,7 @@ Quand je ne code pas, vous pouvez me trouver :
 - ⛷️ En profitant des montagnes pour skier ou pour me balader.  
 
 ## 📫 Me contacter
-- **Portfolio** : [echimine.fr/projets/portfolio](https://echimine.fr/projets/portfolio)  
+- **Portfolio** : [portfolio.echimine.fr](https://portfolio.echimine.fr/)  
 - **Email** : [eliott.chiminello@echimine.fr](mailto:eliott.chiminello@echimine.fr)  
 
 ---
