@@ -6,7 +6,6 @@ Je suis actuellement étudiant en **DN Made Numérique** à **L’École By CCI*
 ## 💻 Ce que je fais
 - **Développement web** : Compétent en **HTML**, **CSS** et **JavaScript**.
 - **Outils de design** : connaissance de **Figma** pour créer des designs modernes.    
-- **En cours** : En ce moment je suis entrain d'apprendre le **Node.js** et **Vue.js**  
 - Toujours curieux d’apprendre et d’explorer de nouvelles technologies pour élargir mes compétences.  
 
 ## 🌟 Centres d’intérêt
