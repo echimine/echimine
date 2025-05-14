@@ -1,7 +1,7 @@
 # 👋 Bonjour, je suis Eliott Chiminello !
 
 ## 🎓 À propos de moi
-Je suis actuellement étudiant en **DN Made Numérique** à **L’École By CCI** à Annecy. Passionné par la création numérique, je me spécialise en **développement web** et je m'oriente plutôt vers le **front-end**. Je suis à la recherche d'un **stage** et d'une **alternance**.
+Je suis actuellement étudiant en **DN Made Numérique** à **L’École By CCI** à Annecy. Passionné par la création numérique, je me spécialise en **développement web**.
 
 ## 💻 Ce que je fais
 - **Développement web** :**HTML**, **CSS**, **JavaScript**, **React**, **Vuejs**
