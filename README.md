@@ -4,7 +4,7 @@
 Je suis actuellement étudiant en **DN Made Numérique** à **L’École By CCI** à Annecy. Passionné par la création numérique, je me spécialise en **développement web** et je m'oriente plutôt vers le **front-end**. Je suis à la recherche d'un **stage** et d'une **alternance**.
 
 ## 💻 Ce que je fais
-- **Développement web** : Compétent en **HTML**, **CSS** et **JavaScript**.
+- **Développement web** :**HTML**, **CSS**, **JavaScript**, **React**, **Vuejs**
 - **Outils de design** : connaissance de **Figma** pour créer des designs modernes.    
 - Toujours curieux d’apprendre et d’explorer de nouvelles technologies pour élargir mes compétences.  
 
