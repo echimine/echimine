@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header className="flex justify-center ">
-      <div className="absolute top-10 z-10 w-[80%] h-[100px] flex items-center justify-center bg-white/30 rounded-lg">
+      <div className="absolute top-10 z-10 w-[80%] h-[100px] flex items-center justify-center bg-[#FCD309] rounded-lg">
         <div className="w-full h-full flex justify-around items-center">
           <div>EC</div>
           <div>

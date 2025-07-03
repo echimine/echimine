@@ -41,7 +41,7 @@ function App() {
           loop
           muted
           playsInline
-          className="h-screen w-full object-cover"
+          className="h-screen w-full object-cover brightness-50"
         >
           {/* <source src="videos/final.webm" type="video/webm" /> */}
           <source
