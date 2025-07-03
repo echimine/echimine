@@ -8,14 +8,10 @@ import {
 
 function App() {
   return (
-    <main className="flex flex-col h-screen bg-black text-white">
-      <header className="p-4 text-center">
-        <h1 className="text-4xl font-bold">Echimine.fr</h1>
-      </header>
-
+    <main className="flex flex-col h-screen">
       {/* Le div qui contient le Canvas prend tout l'espace restant */}
       <div className="flex-1 relative">
-        <Canvas
+        {/* <Canvas
           className="absolute top-0 left-0 w-full h-full"
           shadows
           camera={{ position: [5, 5, 5], fov: 45 }}
@@ -37,7 +33,23 @@ function App() {
           />
 
           <OrbitControls enablePan={false} />
-        </Canvas>
+        </Canvas> */}
+
+        <video
+          // ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="h-screen w-full object-cover"
+        >
+          {/* <source src="videos/final.webm" type="video/webm" /> */}
+          <source
+            src="public/video/Edit_Aestetique_Thrawn_Empire_Fini_Q_E.mp4"
+            type="video/mp4"
+          />
+          Votre navigateur ne prend pas en charge les vidéos WEBM ni MP4.
+        </video>
       </div>
     </main>
   );
