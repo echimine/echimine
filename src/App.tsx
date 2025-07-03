@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Canvas } from '@react-three/fiber';
+import {
+  OrbitControls,
+  Stage,
+  Environment,
+  ContactShadows,
+} from '@react-three/drei';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main className="flex flex-col h-screen bg-black text-white">
+      <header className="p-4 text-center">
+        <h1 className="text-4xl font-bold">Echimine.fr</h1>
+      </header>
+
+      {/* Le div qui contient le Canvas prend tout l'espace restant */}
+      <div className="flex-1 relative">
+        <Canvas
+          className="absolute top-0 left-0 w-full h-full"
+          shadows
+          camera={{ position: [5, 5, 5], fov: 45 }}
+        >
+          <Environment preset="sunset" background />
+
+          <Stage environment={null} intensity={1} shadows adjustCamera>
+            <mesh scale={0.5}>
+              <boxGeometry args={[5, 5, 1]} />
+              <meshStandardMaterial color="#FF5F1F" />
+            </mesh>
+          </Stage>
+
+          <ContactShadows
+            position={[0, -0.8, 0]}
+            opacity={0.4}
+            blur={2.5}
+            far={5}
+          />
+
+          <OrbitControls enablePan={false} />
+        </Canvas>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;
