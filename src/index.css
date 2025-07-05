@@ -1,1 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
+
+.mask-text {
+  -webkit-mask-image: text;
+  -webkit-mask-image: none;
+  mask-image: none;
+  position: relative;
+}
+
+.mask-text h1 {
+  position: absolute;
+  font-size: 20vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  mix-blend-mode: screen;
+}
+
+:root {
+  --font-archivo: 'Archivo', sans-serif;
+  --font-excon: 'Excon', sans-serif;
+  --font-sentient: 'Sentient', serif;
+}
+
+@theme {
+  --font-archivo: var(--font-archivo);
+  --font-excon: var(--font-excon);
+  --font-sentient: var(--font-sentient);
+}
+/**************************Font************************************************/
+/**
+* @license
+*
+* Font Family: Excon
+* Designed by: Alisa Nowak
+* URL: https://www.fontshare.com/fonts/excon
+* © 2025 Indian Type Foundry
+*
+* Excon Thin 
+* Excon Light 
+* Excon Regular 
+* Excon Medium 
+* Excon Bold 
+* Excon Black 
+* Excon Variable (Variable font)
+
+*
+*/
+@font-face {
+  font-family: 'Excon-Thin';
+  src: url('../fonts/Excon-Thin.woff2') format('woff2'),
+    url('../fonts/Excon-Thin.woff') format('woff'),
+    url('../fonts/Excon-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Excon-Light';
+  src: url('../fonts/Excon-Light.woff2') format('woff2'),
+    url('../fonts/Excon-Light.woff') format('woff'),
+    url('../fonts/Excon-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Excon-Regular';
+  src: url('../fonts/Excon-Regular.woff2') format('woff2'),
+    url('../fonts/Excon-Regular.woff') format('woff'),
+    url('../fonts/Excon-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Excon-Medium';
+  src: url('../fonts/Excon-Medium.woff2') format('woff2'),
+    url('../fonts/Excon-Medium.woff') format('woff'),
+    url('../fonts/Excon-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Excon-Bold';
+  src: url('../fonts/Excon-Bold.woff2') format('woff2'),
+    url('../fonts/Excon-Bold.woff') format('woff'),
+    url('../fonts/Excon-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Excon-Black';
+  src: url('../fonts/Excon-Black.woff2') format('woff2'),
+    url('../fonts/Excon-Black.woff') format('woff'),
+    url('../fonts/Excon-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 100.0 to 900.0
+*/
+@font-face {
+  font-family: 'Excon-Variable';
+  src: url('../fonts/Excon-Variable.woff2') format('woff2'),
+    url('../fonts/Excon-Variable.woff') format('woff'),
+    url('../fonts/Excon-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* @license
+*
+* Font Family: Sentient
+* Designed by: Noopur Choksi
+* URL: https://www.fontshare.com/fonts/sentient
+* © 2025 Indian Type Foundry
+*
+* Sentient Extralight 
+* Sentient ExtralightItalic 
+* Sentient Light 
+* Sentient LightItalic 
+* Sentient Regular 
+* Sentient Italic 
+* Sentient Medium 
+* Sentient MediumItalic 
+* Sentient Bold 
+* Sentient BoldItalic 
+* Sentient Variable (Variable font)
+* Sentient VariableItalic (Variable font)
+
+*
+*/
+@font-face {
+  font-family: 'Sentient-Extralight';
+  src: url('../fonts/Sentient-Extralight.woff2') format('woff2'),
+    url('../fonts/Sentient-Extralight.woff') format('woff'),
+    url('../fonts/Sentient-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sentient-ExtralightItalic';
+  src: url('../fonts/Sentient-ExtralightItalic.woff2') format('woff2'),
+    url('../fonts/Sentient-ExtralightItalic.woff') format('woff'),
+    url('../fonts/Sentient-ExtralightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sentient-Light';
+  src: url('../fonts/Sentient-Light.woff2') format('woff2'),
+    url('../fonts/Sentient-Light.woff') format('woff'),
+    url('../fonts/Sentient-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sentient-LightItalic';
+  src: url('../fonts/Sentient-LightItalic.woff2') format('woff2'),
+    url('../fonts/Sentient-LightItalic.woff') format('woff'),
+    url('../fonts/Sentient-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sentient-Regular';
+  src: url('../fonts/Sentient-Regular.woff2') format('woff2'),
+    url('../fonts/Sentient-Regular.woff') format('woff'),
+    url('../fonts/Sentient-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sentient-Italic';
+  src: url('../fonts/Sentient-Italic.woff2') format('woff2'),
+    url('../fonts/Sentient-Italic.woff') format('woff'),
+    url('../fonts/Sentient-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sentient-Medium';
+  src: url('../fonts/Sentient-Medium.woff2') format('woff2'),
+    url('../fonts/Sentient-Medium.woff') format('woff'),
+    url('../fonts/Sentient-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sentient-MediumItalic';
+  src: url('../fonts/Sentient-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Sentient-MediumItalic.woff') format('woff'),
+    url('../fonts/Sentient-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sentient-Bold';
+  src: url('../fonts/Sentient-Bold.woff2') format('woff2'),
+    url('../fonts/Sentient-Bold.woff') format('woff'),
+    url('../fonts/Sentient-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sentient-BoldItalic';
+  src: url('../fonts/Sentient-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Sentient-BoldItalic.woff') format('woff'),
+    url('../fonts/Sentient-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0wght 400.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+  font-family: 'Sentient-Variable';
+  src: url('../fonts/Sentient-Variable.woff2') format('woff2'),
+    url('../fonts/Sentient-Variable.woff') format('woff'),
+    url('../fonts/Sentient-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0wght 400.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+  font-family: 'Sentient-VariableItalic';
+  src: url('../fonts/Sentient-VariableItalic.woff2') format('woff2'),
+    url('../fonts/Sentient-VariableItalic.woff') format('woff'),
+    url('../fonts/Sentient-VariableItalic.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: italic;
+}

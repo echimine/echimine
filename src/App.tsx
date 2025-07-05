@@ -1,58 +1,54 @@
-import { Canvas } from '@react-three/fiber';
-import {
-  OrbitControls,
-  Stage,
-  Environment,
-  ContactShadows,
-} from '@react-three/drei';
+import Hero from './components/Hero';
+import { Typographie } from './components/Typographie';
+import './index.css';
 
-function App() {
+export default function App() {
   return (
-    <main className="flex flex-col h-screen">
-      {/* Le div qui contient le Canvas prend tout l'espace restant */}
-      <div className="flex-1 relative">
-        {/* <Canvas
-          className="absolute top-0 left-0 w-full h-full"
-          shadows
-          camera={{ position: [5, 5, 5], fov: 45 }}
-        >
-          <Environment preset="sunset" background />
+    <main>
+      <Hero />
 
-          <Stage environment={null} intensity={1} shadows adjustCamera>
-            <mesh scale={0.5}>
-              <boxGeometry args={[5, 5, 1]} />
-              <meshStandardMaterial color="#FF5F1F" />
-            </mesh>
-          </Stage>
+      <section className="px-10 py-16 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-2/3 flex flex-col gap-4">
+            <div className="pb-8">
+              <Typographie
+                variant="h2"
+                component="h2"
+                fontChoice="font-archivo"
+                className=""
+              >
+                ABOUT ME
+              </Typographie>
+            </div>
+            <Typographie>
+              Moi c’est Eliott. J’ai commencé à faire des vidéos sur TikTok en
+              2022. Pendant plus d’un an et demi, je montais tout sur CapCut,
+              puis en 2023, je suis passé à After Effects pour aller plus loin
+              dans la qualité de mes montages.
+            </Typographie>
+            <Typographie>
+              Au début, j’éditais un peu de tout, des films, des séries, puis
+              j’ai découvert Star Wars: The Clone Wars Et là… coup de cœur. J’ai
+              commencé à créer des edits autour de cet univers.
+            </Typographie>
+            <Typographie>
+              En un an, j’ai réuni une communauté de plus de 10 000 abonnés.
+              Pour aller plus loin, j’ai lancé la première version de mon site
+              echimine.fr et créé le serveur Discord UniverseEditFR, un espace
+              pour échanger et faire grandir cette passion.
+            </Typographie>
+          </div>
 
-          <ContactShadows
-            position={[0, -0.8, 0]}
-            opacity={0.4}
-            blur={2.5}
-            far={5}
-          />
-
-          <OrbitControls enablePan={false} />
-        </Canvas> */}
-
-        <video
-          // ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="h-screen w-full object-cover brightness-50"
-        >
-          {/* <source src="videos/final.webm" type="video/webm" /> */}
-          <source
-            src="public/video/Edit_Aestetique_Thrawn_Empire_Fini_Q_E.mp4"
-            type="video/mp4"
-          />
-          Votre navigateur ne prend pas en charge les vidéos WEBM ni MP4.
-        </video>
-      </div>
+          {/* IMAGE */}
+          <div className="md:w-1/3">
+            <img
+              src="/images/pfp-echimine.png"
+              alt="Photo de Eliott"
+              className="w-full rounded-2xl shadow-lg object-cover"
+            />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
-
-export default App;
