@@ -17,16 +17,32 @@
   mix-blend-mode: screen;
 }
 
+.masonry-column {
+  background-clip: padding-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 :root {
   --font-archivo: 'Archivo', sans-serif;
   --font-excon: 'Excon', sans-serif;
   --font-sentient: 'Sentient', serif;
+  --jaune: #fcd309;
+  --bg-jaune: #fcd309;
+  --bg-noir: #101010;
 }
 
 @theme {
   --font-archivo: var(--font-archivo);
   --font-excon: var(--font-excon);
   --font-sentient: var(--font-sentient);
+
+  --bg-jaune: var(--bg-jaune);
+  --bg-noir: var(--bg-noir);
+
+  --text-jaune: var(--bg-jaune);
+  --border-jaune: var(--jaune);
 }
 /**************************Font************************************************/
 /**

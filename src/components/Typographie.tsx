@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 
 interface Props {
   variant?:
@@ -23,6 +24,7 @@ interface Props {
     | 'p'
     | 'a'
     | 'div';
+  href?: string;
   weight?: 'light' | 'regular' | 'medium' | 'bold' | 'black';
   className?: string;
   theme?: 'primary' | 'secondary' | 'tercery';
@@ -37,20 +39,19 @@ export const Typographie = ({
   theme = 'primary',
   fontChoice = 'font-archivo',
   className,
+  href,
   children,
 }: Props) => {
-  // Styles par défaut
-  let variantStyles: string = '',
-    colorStyles: string = '',
-    weightStyles: string = '';
+  let variantStyles = '';
+  let colorStyles = '';
+  let weightStyles = '';
 
-  // Définir les styles en fonction des props
   switch (theme) {
     case 'primary':
       colorStyles = 'text-primary';
       break;
     case 'secondary':
-      colorStyles = 'text-secondary';
+      colorStyles = 'text-white';
       break;
     case 'tercery':
       colorStyles = 'text-tercery';
@@ -77,15 +78,13 @@ export const Typographie = ({
 
   switch (variant) {
     case 'h1':
-      variantStyles = 'text-3.5xl';
+      variantStyles = 'text-4xl';
       break;
     case 'h2':
       variantStyles = 'text-3xl';
-
       break;
     case 'h3':
       variantStyles = 'text-2xl';
-
       break;
     case 'h4':
       variantStyles = 'text-xl';
@@ -94,7 +93,7 @@ export const Typographie = ({
       variantStyles = 'text-md';
       break;
     case 'h6':
-      variantStyles = 'text-tag';
+      variantStyles = 'text-lg';
       break;
     case 'link':
       variantStyles = 'text-link';
@@ -110,17 +109,38 @@ export const Typographie = ({
       break;
   }
 
-  return (
-    <Component
-      className={clsx(
-        variantStyles,
-        colorStyles,
-        weightStyles,
-        fontChoice,
-        className
-      )}
-    >
-      {children}
-    </Component>
+  const linkStyles =
+    Component === 'a'
+      ? 'underline decoration-[#fcd309] hover:text-[#fcd309] transition'
+      : '';
+
+  const classes = clsx(
+    variantStyles,
+    colorStyles,
+    weightStyles,
+    fontChoice,
+    linkStyles,
+    className
   );
+
+  if (Component === 'a' && href) {
+    const isInternal = href.startsWith('/');
+
+    return isInternal ? (
+      <Link to={href} className={classes}>
+        {children}
+      </Link>
+    ) : (
+      <a
+        href={href}
+        className={classes}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {children}
+      </a>
+    );
+  }
+
+  return <Component className={classes}>{children}</Component>;
 };

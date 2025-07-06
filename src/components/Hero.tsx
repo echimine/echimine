@@ -1,4 +1,5 @@
 import { ChevronDown } from 'lucide-react';
+import { Typographie } from './Typographie';
 const Hero = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden ">
@@ -29,7 +30,7 @@ const Hero = () => {
             <text
               x="50%"
               y="50%"
-              fontSize="300"
+              fontSize="20vw"
               fill="black"
               textAnchor="middle"
               dominantBaseline="middle"
@@ -44,9 +45,14 @@ const Hero = () => {
         <rect width="100%" height="100%" fill="white" mask="url(#text-mask)" />
       </svg>
       <div className="absolute bottom-30 w-full flex flex-col items-center gap-10 z-20">
-        <h2 className="font-archivo text-center">
-          Editeur français de films et séries depuis 2022
-        </h2>
+        <Typographie
+          variant="h4"
+          component="h2"
+          fontChoice="font-excon"
+          className="font-archivo text-center"
+        >
+          Editeur de films et séries sur Tiktok depuis 2022
+        </Typographie>
         <div>
           <ChevronDown />
         </div>
