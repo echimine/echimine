@@ -7,31 +7,69 @@
 //   Video,
 // } from 'lucide-react';
 // import { Typographie } from '../Typographie';
-import { motion } from 'motion/react';
-import { MotionTypographie } from '../MotionTypographie';
+import { motion } from "motion/react";
+import { MotionTypographie } from "../MotionTypographie";
 
 const DataEchimine = () => {
   return (
     <section>
       <div className="md:pt-40">
         <MotionTypographie
-          variant="h2"
           component="h2"
+          variant="h1"
+          weight="bold"
           className="px-6 py-6"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Echimine en quelque chiffres
+          Chaque chiffre à son histoire
         </MotionTypographie>
+        <div>
+          <MotionTypographie
+            className="px-6 py-2 w-full md:w-3/4"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            En effet, moi c’est Eliott, J’ai commencé à faire des vidéos sur
+            TikTok en 2022. Pendant plus d’un an et demi, je montais tout sur
+            CapCut, puis en 2023, je suis passé à After Effects pour aller plus
+            loin dans la qualité de mes montages.
+          </MotionTypographie>
+          <MotionTypographie
+            className="px-6 py-2 w-full md:w-3/4"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            Au début, j’éditais un peu de tout, des films, des séries, puis j’ai
+            découvert Star Wars: The Clone Wars Et là… coup de cœur. J’ai
+            commencé à créer des edits autour de cet univers.
+          </MotionTypographie>
+          <MotionTypographie
+            className="px-6 py-2 w-full md:w-3/4"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            En un an, j’ai réuni une communauté de plus de 10 000 abonnés. Pour
+            aller plus loin, j’ai lancé la première version de mon site
+            echimine.fr et créé le serveur Discord UniverseEditFR, un espace
+            pour échanger et faire grandir cette passion.
+          </MotionTypographie>
+        </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 md:px-6 py-4 gap-2 md:gap-4">
         <motion.img
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/card-video-views.jpg"
           alt=""
@@ -40,7 +78,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/vignete_edit_anakin_soft_1x1.jpg"
           alt=""
@@ -50,7 +88,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/vignette_edit_ryzler_1x1.jpg"
           alt=""
@@ -60,7 +98,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/card-nbr-video.jpg"
           alt=""
@@ -70,7 +108,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/vignette_edit_luke_mando_1x1.jpg"
           alt=""
@@ -79,7 +117,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/vignette_edit_le_monde_de_charlie_1x1.jpg"
           alt=""
@@ -88,7 +126,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/card-folowers.jpg"
           alt=""
@@ -97,7 +135,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/vignette_edit_les_clones_sw2_1x1.jpg"
           alt=""
@@ -107,7 +145,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/vignette_edit_laurie_amy_1x1.jpg"
           alt=""
@@ -116,7 +154,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/cards-views.jpg"
           alt=""
@@ -126,7 +164,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/vignette_edit_lalaland_1x1.jpg"
           alt=""
@@ -135,7 +173,7 @@ const DataEchimine = () => {
           className="rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           src="/images/cards-img/vignette_edit_anakin_padme_kisse_me_1x1.jpg"
           alt=""

@@ -1,10 +1,10 @@
-import Hero from './components/Hero';
+import Hero from "./components/Hero";
 
-import './index.css';
+import "./index.css";
 
-import DataEchimine from './components/DataEchimineù/DataEchimine';
-import { MotionTypographie } from './components/MotionTypographie';
-import { Typographie } from './components/Typographie';
+import DataEchimine from "./components/DataEchimineù/DataEchimine";
+import { MotionTypographie } from "./components/MotionTypographie";
+import { Typographie } from "./components/Typographie";
 
 export default function App() {
   return (
@@ -14,15 +14,16 @@ export default function App() {
       <DataEchimine />
       <div className="md:pt-20">
         <MotionTypographie
-          variant="h2"
+          variant="h1"
+          weight="bold"
           component="h2"
           className="px-6 py-6"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Echimine c'est aussi UniverseEditFR
+          Echimine, c’est aussi une communauté : UniverseEditFR
         </MotionTypographie>
       </div>
       <section>
